@@ -55,7 +55,7 @@ ROOT_URLCONF = 'portfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/Users/USER/Desktop/Portfolio/portfolio/templates'],
+        'DIRS': ['E:/Python/Porfolio webpages/Django_portfolio_page/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -121,11 +121,11 @@ import os
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static'),
-     '***********/KW_CMS/static'
+     'E:/Python/Porfolio webpages/Django_portfolio_page/static'
 ]
 
 
-MEDIA_ROOT = '****************/media'
+MEDIA_ROOT = 'E:/Python/Porfolio webpages/Django_portfolio_page/media'
 
 MEDIA_URL = '/media/'
 

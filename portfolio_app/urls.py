@@ -8,6 +8,6 @@ from . import views
 app_name ='portfolio_app'
 
 urlpatterns = [
-    path('KW_portfolio', views.main_view),
+    path('KW/', views.main_view),
 
 ]
