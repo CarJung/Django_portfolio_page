@@ -1,0 +1,1 @@
+web: gunicorn Django-portfolio-page.wsgi 
