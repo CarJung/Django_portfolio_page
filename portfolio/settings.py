@@ -20,6 +20,10 @@ import django_heroku
 BASE_DIR = Path(__file__).resolve().parent.parent # This is the root directory of the project
 
 
+SETTINGS_DIR = os.path.dirname(__file__)
+PROJECT_PATH = os.path.join(SETTINGS_DIR, os.pardir)
+PROJECT_PATH = os.path.abspath(PROJECT_PATH)
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
@@ -125,14 +129,22 @@ USE_TZ = True
 
 
 
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+"""STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATIC_URL = '/static/'
 
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+"""
 
-MEDIA_ROOT =BASE_DIR / 'media'
+STATIC_PATH = os.path.join(PROJECT_PATH, 'static')
+STATIC_ROOT = 'staticfiles'
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    STATIC_PATH,
+    )
+
+MEDIA_ROOT = BASE_DIR / 'media'
 
 MEDIA_URL = '/media/'
 
