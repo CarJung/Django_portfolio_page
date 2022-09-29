@@ -1,5 +1,5 @@
 asgiref==3.5.2
-certifi @ file:///C:/b/abs_4f5wo627a3/croots/recipe/certifi_1663615677642/work/certifi
+
 dj-database-url==1.0.0
 Django==4.1.1
 django-heroku==0.3.1
