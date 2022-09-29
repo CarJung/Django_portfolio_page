@@ -11,7 +11,7 @@ def main_view(request):
     Returns:
         _type_: home temaplate
     """
-    return render(request, 'home.html')
+    return render(request, 'index.html')
 
 def template_view(request):
     return render(request, 'templates.html')
