@@ -13,10 +13,7 @@ def main_view(request):
     """
     return render(request, 'index.html')
 
-def template_view(request):
-    return render(request, 'templates.html')
-
-def project_view(request):
+def cv_view(request):
     """_summary_: This is the  view for the each project.
 
     Args:
@@ -25,4 +22,59 @@ def project_view(request):
     Returns:
         _type_: _description_
     """
-    return render(request, '')
+    return render(request, 'CV.html')
+
+def Diabetes_view(request):
+    """_summary_: This is the  view for the each project.
+
+    Args:
+        request (_type_): HttpRequest
+
+    Returns:
+        _type_: _description_
+    """
+    return render(request, 'Diabetes.html')
+
+def Seizure_view(request):
+    """_summary_: This is the  view for the each project.
+
+    Args:
+        request (_type_): HttpRequest
+
+    Returns:
+        _type_: _description_
+    """
+    return render(request, 'Seizure.html')
+
+def Stat_app_view(request):
+    """_summary_: This is the  view for the each project.
+
+    Args:
+        request (_type_): HttpRequest
+
+    Returns:
+        _type_: _description_
+    """
+    return render(request, 'Stat_app.html')
+
+def Estates_view(request):
+    """_summary_: This is the  view for the each project.
+
+    Args:
+        request (_type_): HttpRequest
+
+    Returns:
+        _type_: _description_
+    """
+    return render(request, 'Estates.html')
+
+def data_camp_view(request):
+    """_summary_: This is the  view for the each project.
+
+    Args:
+        request (_type_): HttpRequest
+
+    Returns:
+        _type_: _description_
+    """
+    return render(request, 'Data_camp.html')
