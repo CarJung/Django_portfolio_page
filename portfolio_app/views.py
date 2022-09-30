@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import FileResponse, Http404
 
 # Create your views here.
 
@@ -14,15 +15,10 @@ def main_view(request):
     return render(request, 'index.html')
 
 def cv_view(request):
-    """_summary_: This is the  view for the each project.
-
-    Args:
-        request (_type_): HttpRequest
-
-    Returns:
-        _type_: _description_
-    """
-    return render(request, 'CV.html')
+    try:
+        return FileResponse(open('CV Krzysztof Wróbel.pdf', 'rb'), content_type='application/pdf')
+    except FileNotFoundError:
+        raise Http404()
 
 def Diabetes_view(request):
     """_summary_: This is the  view for the each project.
