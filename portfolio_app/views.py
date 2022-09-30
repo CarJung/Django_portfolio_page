@@ -51,7 +51,7 @@ def Stat_app_view(request):
     Returns:
         _type_: _description_
     """
-    return render(request, 'Stat_app.html')
+    return render(request, 'Stat_test_app.html')
 
 def Estates_view(request):
     """_summary_: This is the  view for the each project.
