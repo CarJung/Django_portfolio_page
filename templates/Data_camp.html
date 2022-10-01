@@ -1,65 +1,60 @@
-{% load static %}
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Data camp case study</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Data Scientist Associate Case Study</title>
 </head>
-
 <body>
-  <header>
-    <nav>
-        
-            <ul class="nav_links">
-              <li>
-                <a href="/Krzysztof.Wrobel/KW">Home</a>
-              </li>
-              <li>
-                <a href="/Krzysztof.Wrobel/KW">Tech Stack</a>
-              </li>
-              <li>
-                <a href="/Krzysztof.Wrobel/KW">Projects</a>
-              </li>
-            </ul>
-    </nav>
-    <a class="cta" href="#contact"><button>Contact</button></a>
-</header>
-  <div class = 'about_text'>
-    <p>
-      This is a case study made for Data Scientist Associate certification. The goal of this project was to analyze the dataset of gym clients and point out factors that contribute to higher participation on classes.
-      Beside that i have made a model that would predict the participation on classes. The model was made using Scikit learn. The results were visualized using Matplotlib.
-    </p> 
-  <div>
-  
-  <div class="tech" id="tech">
-      <h2>Tech Stack</h2>
-      <div class="tech_items">
-      <figure><img src="{% static 'img/python-logo.png' %}" alt="python"></figure>
-      <figure><img src="{% static 'img/numpy.png' %}" alt="numpy"></figure>
-      <figure><img src="{% static 'img/pandas.png' %}" alt="pandas"></figure>
-      <figure><img src="{% static 'img/scikitpng.png' %}" alt="scikitpng"></figure>
-      <figure><img src="{% static 'img/matplotlib.svg' %}" alt="matplotlib"></figure>
-      <figure><img src="{% static 'img/seaborn.svg' %}" alt="seaborn"></figure>
-      </div>
-  </div>
-  <div>
-    <p>
-      Github repository link: 
-    </p>
-  </div>
-  <div class="contact" id = 'contact'>
-    <h2>Contact</h2>
-    <ul class="contact_list">
-        <li><a href="mailto:wrob.kw@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-        <li><a href="https://github.com/CarJung"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/krzysztof-wr%C3%B3bel-a11188224"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-    </ul>
-  </div>
+    <header>
+        <nav>
+                <ul class="nav_links">
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/index.html#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="/index.html#tech">Tech Stack</a>
+                    </li>
+                    <li>
+                        <a href="resources/CV-Krzysztof-Wróbel.pdf" target="_blank">CV</a>
+                    </li>
+                </ul>
+        </nav>
+        <a class="cta" href="/index.html#contact"><button>Contact</button></a>
+    </header>
 
+
+    <div class="project_info">
+        <a href="https://github.com/CarJung/Uni/tree/main/data_camp_certificate" target="_blank" rel="noopener noreferrer"><h2>Warsaw-housing-market-analysis<i class="fa fa-github" aria-hidden="true"></i></h2></a>
+        <div class="project_info_desc">
+            <div class="project_info_img"></div>
+            <div class="about_project">
+            <h2>About Project</h2>
+            <p>This is a case study made for Data Scientist Associate certification. The goal of this project was to analyze the dataset of gym clients and point out factors that contribute to higher participation on classes.
+              Beside that i have made a model that would predict the participation on classes. The model was made using Scikit learn. The results were visualized using Matplotlib.
+            </p>
+            </div>
+        </div>
+        <div class="project_info_img2"></div>
+        <div class="tech_used">
+            <h2>Technology used</h2>
+          <div class="tech_used_items">
+            <figure><img src="./img/python-logo.png" alt="python"></figure>
+            <figure><img src="./img/pandas.png" alt="pandas"></figure>
+            <figure><img src="./img/scikitpng.png" alt="scikitpng"></figure>
+            <figure><img src="./img/matplotlib.svg" alt="matplotlib"></figure>
+            <figure><img src="./img/seaborn.svg" alt="seaborn"></figure>
+          </div>
+        </div>
+     </div>
+
+    
 </body>
-
 </html>
