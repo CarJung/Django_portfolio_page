@@ -8,6 +8,25 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/project.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .project_info_img{
+            background-image: url("{% static 'img/stat_testing.png' %}");
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 80%;
+            width: 50%;
+    }
+    
+        .project_info_img2{
+            background-image: url("");
+            width: 50%;
+            height: 40vh;
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+            </style>
     <title>Statistical tests app</title>
 </head>
 <body>
@@ -32,9 +51,7 @@
     <div class="project_info">
         <a href="https://github.com/CarJung/Uni/tree/main/AB%20testing" target="_blank" rel="noopener noreferrer"><h2>Statistical tests app<i class="fa fa-github" aria-hidden="true"></i></h2></a>
         <div class="project_info_desc">
-            <div class="project_info_img">
-              <figure><img src="{% static 'img/stat_testing.png' %}" alt="python"></figure>
-            </div>
+            <div class="project_info_img"></div>
             <div class="about_project">
             <h2>About Project</h2>
             <p>The goal of this project was to analyze the Warsaw housing market. I used data from the website otodom.pl. The data was scraped using Python and BeautifulSoup. 

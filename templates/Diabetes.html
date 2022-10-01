@@ -8,6 +8,25 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/project.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .project_info_img{
+            background-image: url("{% static 'img/roc lr.png' %}");
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 80%;
+            width: 50%;
+    }
+    
+        .project_info_img2{
+            background-image: url("{% static 'img/label.png' %}");
+            width: 50%;
+            height: 40vh;
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+            </style>
     <title>Behavioral markers diabetes model</title>
 </head>
 <body>
@@ -41,9 +60,7 @@
             </p>
             </div>
         </div>
-        <div class="project_info_img2">
-          <figure><img src="{% static 'img/label.png' %}" alt="python"></figure>
-        </div>
+        <div class="project_info_img2"></div>
         <div class="tech_used">
             <h2>Technology used</h2>
           <div class="tech_used_items">
