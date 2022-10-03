@@ -32,26 +32,6 @@
     font-weight: 500;
 }
 
-
-.project_info_img{
-    background-image: url('/img/data_camp_boxplot.png');
-    background-size: contain;
-    width: 50%;
-    height: 80%;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-
-.project_info_img2{
-    background-image: url('/img/datacamp_feature_imporatance.png');
-    width: 50%;
-    height: 40vh;
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
 .tech_used{
     width: 100%;
     text-align: center;
