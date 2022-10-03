@@ -142,15 +142,6 @@ p{
     font-weight: 500;
 }
 
-.about_img{
-    background-image: url("/img/szabo-viktor-vE1As8YoJRs-unsplash.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 50%;
-}
-
 
 .tech{
     margin-top: 10%;
@@ -245,6 +236,11 @@ p{
 
   @media all and (max-width:820px){
     
+    .card_deck{
+        height: 280vh;
+        padding: 10% 10%;
+    }
+
     .text_welcome i {
         font-size: 4em;
     }
@@ -304,6 +300,11 @@ p{
           height: 80px;
       }
     
+      .card {
+
+        height: 60vh;
+
+      }
 
       .card_section{
         height: 280vh;
@@ -311,6 +312,11 @@ p{
 
       .card-body{
         font-size: 1.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
       }
 
       .card-body button{
@@ -322,8 +328,7 @@ p{
     }
 
   }
-
-  @media all and (max-width:390px){
+    @media all and (max-width:390px){
     .text{
         width: 100%;
        
@@ -376,12 +381,6 @@ p{
           width: 64px;
           height: 64px;
       }
-      
-  
-    .card_deck{
-        height: 250vh;
-        padding: 10% 10%;
-    }
     
  
     .col{
