@@ -73,7 +73,7 @@
 
 
 
-@media screen and (max-width:1150px){
+@media all and (min-width:390px){
 
     .project_info{
         padding: 40%  10% 0;
@@ -129,7 +129,7 @@
 
   }
 
-  @media screen and (max-width:1180px){
+  @media all and (min-width:819px){
 
     .project_info{
         padding: 20%  10% 0;
