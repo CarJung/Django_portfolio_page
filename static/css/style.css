@@ -245,7 +245,7 @@ p{
   }
 
 
-  @media screen and (max-width:1150px){
+  @media all and (min-width:390px){
     .text{
         width: 100%;
        
@@ -332,7 +332,7 @@ p{
 
   }
 
-  @media screen and (max-width:1180px){
+  @media all and (min-width:819px){
     
     .text_welcome i {
         font-size: 4em;
