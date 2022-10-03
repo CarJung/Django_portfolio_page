@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
   <style>
     .about_img{
@@ -15,27 +15,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Krzysztof Wróbel</title>
 </head>
 <body>
     <header>
-        <nav>
-            
-                <ul class="nav_links">
-                  <li>
-                    <a href="#hero">Home</a>
-                  </li>
-                  <li>
-                    <a href="#tech">Tech Stack</a>
-                  </li>
-                  <li>
-                    <a href="#card_deck">Projects</a>
-                  </li>
-                </ul>
-        </nav>
-        <a class="cta" href="#contact"><button>Contact</button></a>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#hero">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tech">Tech Stack</a>
+              </li>
+            </ul>   
+              <a href="#contact"><button class="btn btn-lg">Contact</button></a>
+          </div>
+        </div>
+      </nav>
     </header>
     
     <main>
@@ -59,10 +66,10 @@
       </div>
       <div class="tech" id="tech">
             <h2>Tech Stack</h2>
-            <div class="tech_items">
+          <div class="tech_items">
             <figure><img src="{% static 'img/python-logo.png' %}" alt="python"></figure>
             <figure><img src="{% static 'img/numpy.png' %}" alt="numpy"></figure>
-            <figure><img src="{% static 'img/pandas.png' %}" alt="pandas"></figure>
+            <figure><img src="{% static 'img/pandas.svg' %}" alt="pandas"></figure>
             <figure><img src="{% static 'img/scikitpng.png' %}" alt="scikitpng"></figure>
             <figure><img src="{% static 'img/tensor.png' %}" alt="tensor"></figure>
             <figure><img src="{% static 'img/MySQL-Logo.png' %}" alt="MySQL"></figure>
@@ -71,38 +78,51 @@
             <figure><img src="{% static 'img/azur.png' %}" alt="azur"></figure>
             <figure><img src="{% static 'img/matplotlib.svg' %}" alt="matplotlib"></figure>
             <figure><img src="{% static 'img/seaborn.svg' %}" alt="seaborn"></figure>
+            <figure><img src="{% static 'img/pobrany plik.png' %}" alt="seaborn"></figure>
+            <figure><img src="{% static 'img/pingouin.png' %}" alt="matplotlib"></figure>
+            <figure><img src="{% static 'img/68747470733a2f2f63646e2e7261776769742e636f6d2f70796d632d646576732f70796d632f6d61696e2f646f63732f6c6f676f732f7376672f50794d435f62616e6e65722e737667.svg' %}" alt="seaborn"></figure>
+            <figure><img src="{% static 'img/statsmodels-logo-v2.svg' %}" alt="seaborn"></figure>
         </div>
       </div>
-        <div class="card_section">
+        <div class="card_section" id="projects">
         <h2>Projects</h2>
         <h3>This is my portfolio projects!</h3>        
-        <div class="card_deck" id = 'card_deck'>
-        <div class="card">
-            <img src="{% static 'img/flats_model.png' %}" alt="Avatar">
-            <div class="container">
-              <h4><b>Warsaw housing market analysis</b></h4>
-              <a href="Estates/"><button>Show More</button></a>
+        <div class="card_deck">
+          <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class ='card'>
+            <img src="{% static 'img/flats_model.png' %}" class="card-img-top" alt="Avatar">
+            <div class="card-body">
+              <p class="card-text">Warsaw housing market analysis</p>
+              <a href="Estates/"><button class="btn btn-sm">Show More</button></a>
+            </div>
             </div>
           </div>
-          <div class="card">
-            <img src="{% static 'img/data_camp_boxplot.png' %}" alt="Avatar">
-            <div class="container">
-              <h4><b>Data Scientist Associate Case Study Data Camp</b></h4>
-              <a href="Data_camp/"><button>Show More</button></a>
+          <div class="col">
+            <div class ='card'>
+            <img src="{% static 'img/data_camp_boxplot.png' %}" class="card-img-top" alt="Avatar">
+            <div class="card-body">
+              <p class="'card=text"> Data Scientist Associate Case Study Data Camp</p>
+              <a href="Data_camp/"><button class="btn btn-sm">Show More</button></a>
             </div>
           </div>
-          <div class="card">
-            <img src="{% static 'img/stat_testing.png' %}" alt="Avatar">
-            <div class="container">
-              <h4><b>Statistical tests streamlit app</b></h4>
-              <a href="Stat_app/"><button>Show More</button></a>
+          </div>
+          <div class="col">
+            <div class ='card'>
+            <img src="{% static 'img/stat_testing.png' %}" class="card-img-top" alt="Avatar">
+            <div class="card-body">
+              <p class="card-text">Statistical tests streamlit app</p>
+              <a href="Stat_app/"><button class="btn btn-sm">Show More</button></a>
             </div>
           </div>
-          <div class="card">
-            <img src="{% static 'img/roc lr.png' %}" alt="Avatar">
-            <div class="container">
-              <h4><b>Behavioral markers diabetes model</b></h4>
-                <a href="Diabetes/"><button>Show More</button></a>
+        </div>
+          <div class="col">
+            <div class ='card'>
+            <img src="{% static 'img/roc lr.png' %}" class="card-img-top" alt="Avatar">
+            <div class="card-body">
+              <p class="card-text">Behavioral markers diabetes model</p>
+                <a href="Diabetes/"><button class="btn btn-sm">Show More</button></a>
+              </div>
             </div>
           </div>
         </div>
@@ -116,6 +136,7 @@
             </ul>
         </div>
     </main>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
