@@ -34,16 +34,17 @@
 
 
 .project_info_img{
-    background-image: url('/img/flats_model.png');
+    background-image: url('/img/data_camp_boxplot.png');
     background-size: contain;
+    width: 50%;
+    height: 80%;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 80%;
-    width: 50%;
 }
 
+
 .project_info_img2{
-    background-image: url('/img/flats_importance.png');
+    background-image: url('/img/datacamp_feature_imporatance.png');
     width: 50%;
     height: 40vh;
     background-size: contain;
@@ -69,3 +70,104 @@
     font-size: 3rem;
     color: #9DAAF2;
 }
+
+
+
+@media all and (min-width:390px){
+
+    .project_info{
+        padding: 40%  10% 0;
+        text-align: center;
+    }
+  
+    .project_info h2{
+        font-size: 2rem;
+
+    }
+    .fa-github{
+        padding-left: 0px;
+    }
+
+    .project_info_desc{
+        flex-direction: column;    
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .about_project{
+        width: 100%;
+    }
+    
+    .about_project p {
+        font-size: 1.2em;
+    }
+    
+    
+    .project_info_img{
+        width: 100%;
+        height: 40%;
+ 
+    }
+  
+    
+    .project_info_img2{
+        width: 100%;
+   
+    }
+    
+    .tech_used_items{ 
+        flex-direction: column; 
+    }
+    .tech_used_items img{
+        width: 64px;
+        height: 64px;
+    }
+    
+    .tech_used h2, .about_project h2{
+        font-size: 2rem;   
+    }
+
+  }
+
+  @media all and (min-width:819px){
+
+    .project_info{
+        padding: 20%  10% 0;
+    }
+  
+    .project_info h2{
+        font-size: 3.8rem;
+
+    }
+    .fa-github{
+        padding-left: 5px;
+    }
+
+    .project_info_desc{
+        flex-direction: column;    
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .about_project{
+        width: 100%;
+    }
+    
+    .about_project p {
+        font-size: 1.8em;
+    }
+    
+    .tech_used_items{ 
+        flex-direction: row; 
+    }
+ 
+    .tech_used_items img{
+        width: 80px;
+        height: 80px;
+    }
+    
+    .tech_used h2, .about_project h2{
+        font-size: 3.8rem;   
+    }
+
+  }
