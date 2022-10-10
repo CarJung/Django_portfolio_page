@@ -14,6 +14,17 @@ def main_view(request):
     """
     return render(request, 'index.html')
 
+def projects_view(request):
+    """_summary_: This is the  view for the each project.
+
+    Args:
+        request (_type_): HttpRequest
+
+    Returns:
+        _type_: _description_
+    """
+    return render(request, 'Projects.html')
+
 def Diabetes_view(request):
     """_summary_: This is the  view for the each project.
 
