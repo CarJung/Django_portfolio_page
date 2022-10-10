@@ -182,7 +182,7 @@ p{
     text-align: center;
  }
 .card_deck{
-    height: 150vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -401,6 +401,7 @@ p{
       }
     .card_deck{
         padding: 10% 10%;
+        height: auto;
     }
     
  
