@@ -9,6 +9,9 @@ app_name ='portfolio_app'
 
 urlpatterns = [
     path('KW/', views.main_view),
-    path('Template/', views.template_view),
-    path('Project/', views.project_view),
+    path('KW/Diabetes/', views.Diabetes_view),
+    path('KW/Seizure/', views.Seizure_view),
+    path('KW/Stat_app/', views.Stat_app_view),
+    path('KW/Estates/', views.Estates_view),
+    path('KW/Data_camp/', views.data_camp_view),
 ]
