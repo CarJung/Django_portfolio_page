@@ -1,4 +1,5 @@
 asgiref==3.5.2
+certifi @ file:///C:/b/abs_4f5wo627a3/croots/recipe/certifi_1663615677642/work/certifi
 charset-normalizer==2.1.1
 dj-database-url==1.0.0
 Django==4.1.1
@@ -6,7 +7,6 @@ django-heroku==0.3.1
 gunicorn==20.1.0
 heroku==0.1.4
 idna==3.4
-Pillow==9.2.0
 psycopg2==2.9.3
 psycopg2-binary==2.9.3
 python-dateutil==1.5
