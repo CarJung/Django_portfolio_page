@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 import os as os
 from turtle import Turtle
+import tkinter as TK
 
 import dj_database_url
 import django_heroku
