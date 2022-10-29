@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os as os
+from turtle import Turtle
 
 import dj_database_url
 import django_heroku
@@ -31,7 +32,7 @@ PROJECT_PATH = os.path.abspath(PROJECT_PATH)
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'c9zp2mh&70b1$-y6ko4b!gdud((lr%+xg58%fm#dbmv1vz3y#f')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['https://krzysztof-wrobel.herokuapp.com','127.0.0.1']
 

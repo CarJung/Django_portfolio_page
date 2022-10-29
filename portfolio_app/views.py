@@ -79,3 +79,14 @@ def data_camp_view(request):
         _type_: _description_
     """
     return render(request, 'Data_camp.html')
+
+def churn_view(request):
+    """_summary_: This is the  view for the each project.
+
+    Args:
+        request (_type_): HttpRequest
+
+    Returns:
+        _type_: _description_
+    """
+    return render(request, 'Churn.html')

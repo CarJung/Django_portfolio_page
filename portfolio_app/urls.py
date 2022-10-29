@@ -14,5 +14,6 @@ urlpatterns = [
     path('KW/Stat_app/', views.Stat_app_view),
     path('KW/Estates/', views.Estates_view),
     path('KW/Data_camp/', views.data_camp_view),
-    path("KW/Projects/", views.projects_view)
+    path("KW/Projects/", views.projects_view),
+    path("KW/Churn/", views.churn_view),
 ]
