@@ -87,13 +87,13 @@
     .project_info_img{
         width: 100% !important;
         height: 40% !important;
- 
+        Background-color: white;
     }
   
     
     .project_info_img2{
         width: 100% !important;
-   
+        Background-color: white;
     }
     
     .tech_used_items img{
